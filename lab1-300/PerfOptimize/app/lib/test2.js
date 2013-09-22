@@ -1,7 +1,7 @@
 var test2 = {};
 
-(function() {
-	test2.build = function() {
+test2.build = function(parent) {
+	(function() {
 		test2.win = Ti.UI.createWindow({ title: 'Test 2 Win' });
 		test2.table = Ti.UI.createTableView({ top: 50 });
 		test2.label = Ti.UI.createLabel({ text: 'Some Label', color: '#eee', width: 100, height: 20, top: 15 });
@@ -25,10 +25,16 @@ var test2 = {};
 			// test2.close = null;
 		});
 		
+		test2.win.backgroundColor = 'white';
 		test2.win.add(test2.label);
 		test2.win.add(test2.table);
 		test2.win.rightNavButton = test2.close;
 		
-		test2.win.open({ modal: true });	
-	};
-})();
+		if (OS_IOS)
+			parent.openWindow(test2.win, { modal: true });
+		else
+			test2.win.open({ modal: true });
+	})();
+}
+
+exports.build = test2.build;

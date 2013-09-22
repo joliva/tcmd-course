@@ -1,5 +1,12 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+    <NavigationWindow id='index' platform="ios">
+		<Window class="container" layout='vertical'>
+			<Button id='btnTest1' top=100 title='Test 1' onClick='do_test1'>
+			<Button id='btnTest2' top=100 title='Test 2' onClick='do_test2'>
+		</Window>
+    </NavigationWindow>
+	<Window id='index' class="container" layout='vertical' platform='android'>
+		<Button id='btnTest1' top=100 title='Test 1' onClick='do_test1'>
+		<Button id='btnTest2' top=100 title='Test 2' onClick='do_test2'>
 	</Window>
 </Alloy>

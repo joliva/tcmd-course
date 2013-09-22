@@ -1,8 +1,7 @@
 ".container": {
 	backgroundColor:"white"
 },
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
+"Button": {
+	width: '100dp',
+	style: Ti.UI.iPhone.SystemButtonStyle.BORDERED
 } 
