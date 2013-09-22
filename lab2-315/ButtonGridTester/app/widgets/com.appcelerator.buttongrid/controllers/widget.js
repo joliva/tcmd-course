@@ -136,6 +136,12 @@ exports.init = function ButtonGridInit(args) {
             height: $._params.buttonHeight,
             click: $._params.click
         });
+        
+        // make sure units are in DP
+        if (OS_ANDROID) {
+        	buttonProps.width *= Ti.Platform.displayCaps.dpi / 160;
+        	buttonProps.height *= Ti.Platform.displayCaps.dpi / 160;
+        }
 
         if (OS_ANDROID || OS_MOBILEWEB) {
             if (button.title) {
@@ -221,14 +227,24 @@ exports.relayout = function ButtonGridRelayout(e) {
     Ti.API.info("ButtonGrid: relayout");
     var duration = $._params.duration || 2000;
 
-    // Modify the width of the overall scroll view to reflect the rotation.
-    $.scrollview.contentWidth = Ti.Platform.displayCaps.getPlatformWidth();
-    $.scrollview.contentHeight = 'auto';
-
     // Calculate the new gutter.
-    var w = Ti.Platform.displayCaps.getPlatformWidth();
-    var n = Math.floor(w / $._params.buttonWidth);
-    var gutter = (w - n * $._params.buttonWidth) / (n + 1);
+    var platformWidth = Ti.Platform.displayCaps.getPlatformWidth();
+    var buttonWidth = $._params.buttonWidth;
+    var buttonHeight = $._params.buttonHeight;
+    
+    // make sure units are in DP
+    if (OS_ANDROID) {
+    	buttonWidth *= Ti.Platform.displayCaps.dpi / 160;
+    	buttonHeight *= Ti.Platform.displayCaps.dpi / 160;
+    }
+    
+    // Modify the width of the overall scroll view to reflect the rotation.
+    $.scrollview.contentWidth = platformWidth;
+    $.scrollview.contentHeight = 'auto';
+    
+    var w = platformWidth;
+    var n = Math.floor(w / buttonWidth);
+    var gutter = (w - n * buttonWidth) / (n + 1);
     var left = gutter, top = gutter;
 
     // Animate the buttons into place.
@@ -238,10 +254,10 @@ exports.relayout = function ButtonGridRelayout(e) {
             top: top,
             duration: duration
         });
-        left += gutter + $._params.buttonWidth;
+        left += gutter + buttonWidth;
         if (left >= w) {
             left = gutter;
-            top += gutter + $._params.buttonHeight;
+            top += gutter + buttonHeight;
         }
     });
 };
