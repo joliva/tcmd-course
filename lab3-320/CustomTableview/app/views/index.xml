@@ -1,7 +1,7 @@
 <Alloy>
 	<Window class="container">
 		<!-- color #3e3f87, bold 18dp text, set 1dp down and 10dp left -->
-		<Label id="label" text="Custom Table" top="1dp" left="10dp" color="#3e3f87" />
-		<TableView id="tblview" top="45dp" width="90%" height="85%"/>
+		<Label id="label"/>
+		<TableView id="tblview"/>
 	</Window>
 </Alloy>

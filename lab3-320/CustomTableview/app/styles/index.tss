@@ -1,8 +1,20 @@
 ".container": {
 	backgroundColor:"white"
 },
-"Label": {
+"#label": {
+	text: 'Custom Table',
+	top: '1dp',
+	left: '10dp',
 	width: Ti.UI.SIZE,
 	height: Ti.UI.SIZE,
-	color: "#000"
-} 
+	color: '#3e3f87',
+	font: {
+		fontSize: '18dp',
+		fontWeight: 'bold'
+	}
+},
+"#tblview": {
+	top: '45dp',
+	width: '90%',
+	height: '85%'
+}
