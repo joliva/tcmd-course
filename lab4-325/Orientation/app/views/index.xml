@@ -1,0 +1,7 @@
+<Alloy>
+	<Window class="container">
+		<ImageView id="coverart"/>
+		<Label id="artist"/>
+		<Label id="linernotes"/>
+	</Window>
+</Alloy>
