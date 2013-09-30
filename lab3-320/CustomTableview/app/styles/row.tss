@@ -1,4 +1,42 @@
-
-".container" : {
-  
+".container" : {  
+},
+".row": {
+	backgroundImage:'middleRow.png',
+	selectedBackgroundImage:'middleRowSelected.png',
+	backgroundColor:'transparent',
+	height:'74dp'
+},
+".left": {
+	height:'64dp',
+	width:'64dp',
+	top:'8dp',
+	left:'8dp'
+},
+".right": {
+	image:'notificationBadge.png',
+	height:'22dp',
+	width:'25dp',
+	top:'32dp',
+	right:'10dp',
+	myImage:'blue'
+},
+".title": {
+	font:{
+		fontSize:'16dp',
+		fontWeight:'bold'
+	},
+	color:'black',
+	top:'20dp',
+	left:'75dp',
+	height:Ti.UI.SIZE
+},
+".subtitle": {
+	font:{
+		fontSize:'13dp',
+		fontWeight:'bold'
+	},
+	color:'black',
+	top:'42dp',
+	left:'75dp',
+	height:Ti.UI.SIZE
 }

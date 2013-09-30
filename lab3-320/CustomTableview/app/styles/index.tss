@@ -1,5 +1,7 @@
 ".container": {
-	backgroundColor:"white"
+	top: Alloy.CFG.winTopOffset,
+	backgroundColor:"white",
+	backgroundImage:"gradientBackground.png"
 },
 "#label": {
 	text: 'Custom Table',
@@ -17,4 +19,7 @@
 	top: '45dp',
 	width: '90%',
 	height: '85%'
+},
+"#tblview[platform=ios]": {
+	separatorStyle: Ti.UI.iPhone.TableViewSeparatorStyle.NONE
 }

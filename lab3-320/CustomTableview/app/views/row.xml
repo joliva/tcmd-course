@@ -1,4 +1,8 @@
 <Alloy>
-	<View class="container">
-	</View>
+	<TableViewRow id='row' class='row'>
+		<ImageView id='leftImage' class='left' />
+		<ImageView id='rightImage' class='right' />
+		<Label id='title' class='title' />
+		<Label id='subtitle' class='subtitle' />
+	</TableViewRow>
 </Alloy>

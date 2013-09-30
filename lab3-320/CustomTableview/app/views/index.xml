@@ -1,6 +1,5 @@
 <Alloy>
 	<Window class="container">
-		<!-- color #3e3f87, bold 18dp text, set 1dp down and 10dp left -->
 		<Label id="label"/>
 		<TableView id="tblview"/>
 	</Window>
