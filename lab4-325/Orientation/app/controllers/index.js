@@ -9,16 +9,55 @@ images[0] = '/dylan.png';
 images[1] = '/dylan1.png';
 images[2] = '/dylan2.png';
 
+var iIndex = 0,
+	nIndex = 0;
+
 // handle the swipe event -- change the liner notes 
 // to a random member of the notes array
+$.linernotes.addEventListener('swipe', function(e) {
+	var index;
+	
+	while ( (index = Math.round(Math.random() * 2)) == nIndex) {}
+	nIndex = index;
+	$.linernotes.text = notes[index];
+});
 
 
 // handle the shake event -- change the cover art image
 // to a random member of the images array
-
+Ti.Gesture.addEventListener('shake', function(e) {
+	var index;
+	
+	while ( (index = Math.round(Math.random() * 2)) == iIndex) {}
+	iIndex = index;
+	$.coverart.image = images[index];
+});
 
 // handle the orientation change event
 // by moving elements to new locations
+Ti.Gesture.addEventListener('orientationchange', function(e) {	
+	if (Ti.Gesture.isPortrait() == true) {
+		// portrait
+		$.artist.top='260dp';
+		$.artist.left=null;
+		$.coverart.top='10dp';
+		$.coverart.left=null;
+		$.linernotes.left=null;
+		$.linernotes.bottom='10dp';
+		$.linernotes.width='240dp';
+	} else {
+		// landscape
+		$.artist.top='240dp';
+		$.artist.left='250dp';
+		$.coverart.top=null;
+		$.coverart.left='10dp';
+		$.linernotes.left='260dp';
+		$.linernotes.bottom= (OS_IOS == true) ? '20dp' : '40dp';
+		$.linernotes.width='200dp';
+	}
+});
 
+$.linernotes.text = notes[0];
+$.coverart.image = images[0];
 
 $.index.open();

@@ -20,6 +20,9 @@
     <iphone>
         <orientations device="iphone">
             <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
         <orientations device="ipad">
             <orientation>Ti.UI.PORTRAIT</orientation>
@@ -28,7 +31,11 @@
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
-    <android xmlns:android="http://schemas.android.com/apk/res/android"/>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+	    <property name="ti.android.shake.factor" type="double">0.5</property>
+	    <property name="ti.android.shake.quiet.milliseconds" type="int">50</property>
+	    <property name="ti.android.shake.active.milliseconds" type="int">20</property>
+    </android>
     <mobileweb>
         <precache/>
         <splash>
