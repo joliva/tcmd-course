@@ -1,43 +1,36 @@
 ".container": {
 	backgroundColor:"white"
 },
-"#artist[platform=ios]": {
+"#artist": {
 	text: 'Bob Dylan',
-	width: 320,
+	width: '320dp',
 	height: Ti.UI.SIZE,
-	top: 260,
+	top: '260dp',
 	textAlign: 'center',
-	font: {fontSize: 22, fontFamily: 'AmericanTypewriter-Bold', fontWeight: 'bold'},
 	color: 'black'
+},
+"#artist[platform=ios]": {
+	font: {fontSize: '22dp', fontFamily: 'AmericanTypewriter-Bold', fontWeight: 'bold'}
 },
 "#artist[platform=android]": {
-	text: 'Bob Dylan',
-	width: 320,
-	height: Ti.UI.SIZE,
-	top: 260,
-	textAlign: 'center',
-	font: {fontSize: 22, fontFamily: 'serif', fontWeight: 'bold'},
-	color: 'black'
+	font: {fontSize: '22dp', fontFamily: 'serif', fontWeight: 'bold'}
 },
 "#coverart":{
-	width: 240,
-	height: 240,
-	top: 10,
+	width: '240dp',
+	height: '240dp',
+	top: '10dp',
 	image: '/dylan.png'
 },
-"#linernotes[platform=ios]":{
-	width: 240,
-	height: 240,
-	bottom: 10,
-	font: {fontSize: 10, fontFamily: 'AmericanTypewriter'},
+"#linernotes":{
+	width: '240dp',
+	height: '240dp',
+	bottom: '10dp',
 	color: 'black',
 	text: 'Together Through Life is the 33rd studio album by Bob Dylan, released on April 28, 2009, on Columbia Records. The album debuted at number one in several countries, including the U.S. and the UK. It is Dylan\'s first number one in Britain since New Morning in 1970.'
 },
+"#linernotes[platform=ios]":{
+	font: {fontSize: '10dp', fontFamily: 'AmericanTypewriter'}
+},
 "#linernotes[platform=android]":{
-	width: 240,
-	height: 240,
-	bottom: 10,
-	font: {fontSize: 10, fontFamily: 'serif'},
-	color: 'black',
-	text: 'Together Through Life is the 33rd studio album by Bob Dylan, released on April 28, 2009, on Columbia Records. The album debuted at number one in several countries, including the U.S. and the UK. It is Dylan\'s first number one in Britain since New Morning in 1970.'
+	font: {fontSize: '10dp', fontFamily: 'serif'}
 }
