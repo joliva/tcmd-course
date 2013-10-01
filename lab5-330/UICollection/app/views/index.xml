@@ -1,5 +1,11 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+	<Window class="container" onClick='blurThem'>
+		<ScrollView>
+			<TextField id='normal' />
+			<TextField id='numeric' />
+			<TextField id='web' />
+			<TextField id='email' />
+			<TextField id='password' />
+		</ScrollView>
 	</Window>
 </Alloy>
