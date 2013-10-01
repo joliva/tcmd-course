@@ -1,8 +1,33 @@
 ".container": {
-	backgroundColor:"white"
+	top: Alloy.CFG.winTopOffset,
+	backgroundColor:"black"
 },
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
-} 
+"#scrolly": {
+	contentWidth:Ti.UI.SIZE,
+	contentHeight:Ti.UI.SIZE,
+	horizontalWrap: false,	// android
+	top:0,
+	width:Ti.UI.FILL,
+	height:'30dp',
+	scrollType: 'horizontal',
+	backgroundColor: '#fff',
+	layout: 'horizontal'
+},
+"Label":{
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE,
+	font: {fontSize: '18dp'},
+	color:'#000',
+	left:'10dp',
+	top:0
+}
+"ImageView": {
+	height: Ti.UI.FILL
+},
+"#cards": {
+	top:'30dp',
+	height:Ti.UI.FILL,
+	showPagingControl:true,
+	pagingControlHeight:'30dp',
+	backgroundColor: '#000'
+}

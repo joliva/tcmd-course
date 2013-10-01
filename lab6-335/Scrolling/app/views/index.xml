@@ -1,5 +1,16 @@
 <Alloy>
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<ScrollView id='scrolly' onClick='setPlayer'>
+			<Label id='player1' text='Harmon Killebrew' player='harmon' />
+			<Label id='player2' text='Kent Hrbek' player='kent' />
+			<Label id='player3' text='Kirby Puckett' player='kirby' />
+			<Label id='player4' text='Rod Carew' player='rod' />
+			<Label id='player5' text='Tony Oliva' player='tony' />
+		</ScrollView>
+		<ScrollableView id='cards'>
+			<ImageView id='image1' image='/harmon1.jpg' />
+			<ImageView id='image2' image='/harmon2.jpg' />
+			<ImageView id='image3' image='/harmon3.jpg' />
+		</ScrollableView>>
 	</Window>
 </Alloy>
