@@ -1,3 +1,35 @@
 ".container": {
+	top: Alloy.CFG.winTopOffset, 
 	backgroundColor:"white"
+},
+".box": {
+	height: '50dp',
+	width: '100dp',
+	color: 'white',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontSize: '14dp',
+		fontWeight: 'bold'
+	}
+},
+"#label": {
+	font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	width: Ti.UI.FILL,
+	color: 'black',
+	top: '15dp'
+},
+"#box1": {
+	top: '60dp',
+	backgroundColor: '#c44'
+},
+"#box2": {
+	top: '130dp',
+	backgroundColor: '#4c4'
+},
+"#box3": {
+	top: '200dp',
+	backgroundColor: '#44c'
 }
