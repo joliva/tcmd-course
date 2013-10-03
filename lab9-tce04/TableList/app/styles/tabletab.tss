@@ -1,0 +1,10 @@
+"Window": {
+	backgroundColor: 'white'
+}
+"#table[platform=ios]":{
+	separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+}
+"#table[platform=android]":{
+	separatorColor: 'transparent',
+	color: 'black'
+}

@@ -1,0 +1,23 @@
+<Alloy>
+	<Tab title="ListView" icon="KS_nav_views.png">
+		<Window title="ListView">
+			<ListView id="list" defaultItemTemplate="odd">
+				<Templates>
+					<ItemTemplate name="odd" height="60" accessoryType="Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK">
+						<ImageView bindId="leftimage" id="leftimage"/>
+						<Label bindId="heading" id="heading"/>
+						<Label bindId="subheading" id="subheading"/>
+					</ItemTemplate>
+					<ItemTemplate name="even" height="60">
+						<ImageView bindId="leftimage" id="leftimage"/>
+						<Label bindId="heading" id="heading"/>
+						<Label bindId="subheading" id="subheading"/>
+					</ItemTemplate>
+				</Templates>
+
+				<ListSection id="section">
+				</ListSection>
+			</ListView>
+		</Window>
+	</Tab>
+</Alloy>

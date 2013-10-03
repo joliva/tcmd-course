@@ -1,0 +1,22 @@
+"#leftimage": {
+	left: 6,
+	top: 6,
+	width: 48,
+	height: 48
+}
+"Label":{
+	left: 60,
+	color: 'black'
+}
+"#heading": {
+	top: 5,
+	font: {
+		fontWeight: 'bold'
+	}
+}
+"#subheading": {
+	top: 25
+}
+"Window": {
+	backgroundColor: 'white'
+}

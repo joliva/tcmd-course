@@ -1,0 +1,6 @@
+<Alloy>
+	<TabGroup>
+		<Require src="tabletab" id="tabletab"/>
+		<Require src="listtab" id="listtab"/>
+	</TabGroup>
+</Alloy>
