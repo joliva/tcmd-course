@@ -1,3 +1,27 @@
 ".container": {
-	backgroundColor:"white"
+	backgroundColor:"#888",
+	exitOnClose: true,
+	windowSoftInputMode: Ti.UI.Android.SOFT_INPUT_ADJUST_PAN
+},
+'#label': {
+	top: '5dp',
+	font: {
+		fontSize: '20dp',
+		fontWeight: 'bold'
+	},
+	color: 'white'
+},
+'#text': {
+	hintText: 'Sharing intents is fun!',
+	top: '35dp',
+	width: '90%',
+	height: '120dp'
+},
+'#button': {
+	top: '175dp',
+	width: '140dp',
+	height: '40dp',
+	font: {
+		fontSize: '18dp'
+	}
 }
