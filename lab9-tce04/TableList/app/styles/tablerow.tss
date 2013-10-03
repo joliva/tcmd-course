@@ -1,22 +1,26 @@
 "#leftimage": {
-	left: 6,
-	top: 6,
-	width: 48,
-	height: 48
+	left: '6dp',
+	top: '6dp',
+	width: '48dp',
+	height: '48dp'
 }
 "Label":{
-	left: 60,
+	left: '60dp',
 	color: 'black'
 }
 "#heading": {
-	top: 5,
+	top: '5dp',
 	font: {
+		fontSize: '14dp',
 		fontWeight: 'bold'
 	}
 }
 "#subheading": {
-	top: 25
+	top: '25dp',
+	font: {
+		fontSize: '14dp'
+	}
 }
 "#row": {
-	height: 60
+	height: '60dp'
 }
