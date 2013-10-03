@@ -7,7 +7,6 @@ If the user clicks on the image, change the image to show the /dark_star.png gra
 
 function tableClick(e) {
 	Ti.API.info('Row ' + e.index + ' was clicked');
-	Ti.API.info(e.source);
 	if (e.source.id == 'leftimage') {
 		e.source.image = '/dark_star.png';
 	}
