@@ -1,12 +1,3 @@
-/*
-
-Add an itemclick event listener to your list. On each click:
-Log a message to the console stating that "Item # was clicked" where # is the row number
-If the user clicks on the image, change the image to show the /dark_star.png graphic. You will need a reference to
-the item, to update its leftimage.image property. Don't forget to update the item by calling the section's updateItemAt()
-method
-*/
-
 function listClick(e) {
 	Ti.API.info('Item ' + e.itemIndex + ' was clicked');
 	
