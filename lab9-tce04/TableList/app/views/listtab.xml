@@ -1,7 +1,7 @@
 <Alloy>
 	<Tab title="ListView" icon="KS_nav_views.png">
 		<Window title="ListView">
-			<ListView id="list" defaultItemTemplate="odd">
+			<ListView id="list" defaultItemTemplate="odd" onItemclick='listClick'>
 				<Templates>
 					<ItemTemplate name="odd" height="60" accessoryType="Ti.UI.LIST_ACCESSORY_TYPE_CHECKMARK">
 						<ImageView bindId="leftimage" id="leftimage"/>

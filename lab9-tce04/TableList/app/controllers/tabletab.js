@@ -1,10 +1,3 @@
-/*
-
-Add a click event listener to your table. On each click:
-Log a message to the console stating that "Row # was clicked" where # is the row number
-If the user clicks on the image, change the image to show the /dark_star.png graphic
-*/
-
 function tableClick(e) {
 	Ti.API.info('Row ' + e.index + ' was clicked');
 	if (e.source.id == 'leftimage') {

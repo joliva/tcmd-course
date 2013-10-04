@@ -11,11 +11,15 @@
 "#heading": {
 	top: 5,
 	font: {
+		fontSize: '14dp',
 		fontWeight: 'bold'
 	}
 }
 "#subheading": {
-	top: 25
+	top: 25,
+	font: {
+		fontSize: '14dp'
+	}
 }
 "Window": {
 	backgroundColor: 'white'
