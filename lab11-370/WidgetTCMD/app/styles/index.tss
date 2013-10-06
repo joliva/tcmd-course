@@ -1,0 +1,4 @@
+".container": {
+	top: Alloy.CFG.winTopOffset,
+	backgroundColor:"white"
+}
