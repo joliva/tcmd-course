@@ -1,6 +1,6 @@
 <Alloy>
 	<Window class="container">
-		<View id="vitalsview">
+		<View id="vitalsView">
 			<Label class="label" id="fuginame">D.B. Cooper</Label>
 			<Label class="label" id="fugidetails">Missing since Nov. 24, 1971</Label>
 		</View>

@@ -15,7 +15,7 @@
 "#fugidetails": {
 	font: { fontSize: 12 }
 },
-"#vitalsview": {
+"#vitalsView": {
 	top: 10,
 	left: 110,
 	right: 10,
