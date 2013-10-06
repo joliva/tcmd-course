@@ -1,0 +1,31 @@
+".container": {
+	backgroundColor:"transparent",
+	backgroundImage:'images/grain.png'
+},
+".label": {
+	textAlign:'left',
+	color:'#fff',
+	height:Ti.UI.SIZE,
+	left: 0,
+	top: 5
+},
+"#fuginame": {
+	font: { fontWeight: 'bold'}
+},
+"#fugidetails": {
+	font: { fontSize: 12 }
+},
+"#vitalsview": {
+	top: 10,
+	left: 110,
+	right: 10,
+	layout: 'vertical'
+},
+"#fugitiveImage": {
+	image:'images/placeholder.png',
+	top:10,
+	height:90,
+	width:90,
+	borderRadius:5,
+	left: 10
+}
