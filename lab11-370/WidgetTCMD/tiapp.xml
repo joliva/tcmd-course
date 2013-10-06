@@ -28,12 +28,12 @@
             <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
         </orientations>
     </iphone>
-	<android xmlns:android="http://schemas.android.com/apk/res/android">
-		<tool-api-level>18</tool-api-level>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <tool-api-level>18</tool-api-level>
         <manifest>
-			<application android:theme="@android:style/Theme.Holo"/>
-	        <uses-sdk android:minSdkVersion="14"/>
-	        <uses-sdk android:targetSdkVersion="15"/>
+            <application android:theme="@android:style/Theme.Holo"/>
+            <uses-sdk android:minSdkVersion="14"/>
+            <uses-sdk android:targetSdkVersion="15"/>
             <supports-screens android:anyDensity="false"/>
         </manifest>
     </android>
@@ -45,7 +45,10 @@
         </splash>
         <theme>default</theme>
     </mobileweb>
-    <modules/>
+    <modules>
+        <module platform="android">ti.paypal</module>
+        <module platform="iphone">ti.paypal</module>
+    </modules>
     <deployment-targets>
         <target device="android">true</target>
         <target device="blackberry">false</target>

@@ -1,4 +1,24 @@
 ".container": {
 	top: Alloy.CFG.winTopOffset,
 	backgroundColor:"white"
+},
+'#winPreapproval': {
+    title: 'Preapproval',
+    url: 'preapproval.js',
+    backgroundColor: '#fff'
+},
+'#winSimple': {
+    title: 'Simple',
+    url: 'simple.js',
+    backgroundColor: '#fff'
+},
+'#winParallel': {
+    title: 'Parallel',
+    url: 'parallel.js',
+    backgroundColor: '#fff'
+},
+'#winChain': {
+    title: 'Chain',
+    url: 'chain.js',
+    backgroundColor: '#fff'
 }

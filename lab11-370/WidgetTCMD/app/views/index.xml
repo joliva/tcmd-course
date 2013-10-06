@@ -1,4 +1,16 @@
 <Alloy>
-	<Window class="container">
-	</Window>
+	<TabGroup backgroundColor="white" class='container'>
+		<Tab id='tabPreapproval' title='Preapproval'>
+			<Window id='winPreapproval' />
+		</Tab>
+		<Tab id='tabSimple' title='Simple'>
+			<Window id='winSimple' />
+		</Tab>
+			<Tab id='tabParallel' title='Parallel'>
+			<Window id='winParallel' />
+		</Tab>
+			<Tab id='tabChain' title='Chain'>
+			<Window id='winChain' />
+		</Tab>		
+	</TabGroup>
 </Alloy>
