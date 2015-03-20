@@ -99,6 +99,9 @@ var defaults = {
     textSelectedColor: 'black',  // Text color of the label when the button is selected.
     assetDir: '/images/'		// Subdirectory to find the button assets.
 };
+
+var lastValidOrientation = null;
+
 /**
  * @method init
  * Initializes the button grid.
@@ -224,6 +227,24 @@ exports.destroy = function() {
  * @param {Object} e Unused.
  */
 exports.relayout = function ButtonGridRelayout(e) {
+    // relayout only rotating the device
+    if (e){
+        Ti.API.debug('Orientation: ' + e.orientation);
+        switch(e.orientation){
+            case Ti.UI.PORTRAIT:
+            case Ti.UI.UPSIDE_PORTRAIT:
+            case Ti.UI.LANDSCAPE_LEFT:
+            case Ti.UI.LANDSCAPE_RIGHT:
+                if (e.orientation === lastValidOrientation){
+                    return;
+                }
+                lastValidOrientation = e.orientation;
+                break;
+            default:
+                return;
+        }
+    }
+
     Ti.API.info("ButtonGrid: relayout");
     var duration = $._params.duration || 2000;
 
